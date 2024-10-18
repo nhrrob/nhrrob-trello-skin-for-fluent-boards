@@ -1,0 +1,19 @@
+{
+    "name": "nhrtsf/trello-skin",
+    "description": "NHR Trello Skin for FluentBoards plugin",
+    "type": "wordpress-plugin",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Nazmul Hasan Robin",
+            "email": "robin.sust08@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Nhrtsf\\TrelloSkin\\": "includes/"
+        }
+    }
+}

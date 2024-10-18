@@ -1,0 +1,73 @@
+/* Imp #1 : Add new lists button  */
+#fluent-boards-app .fluentboards_databox.is-blur {
+    background: rgb(0, 121, 191) !important;
+}
+
+#fluent-boards-app .el-button.fbs_kanban_view_stage_add_button {
+    transform: unset;
+    left: unset;
+    top: unset;
+    justify-content: flex-start;
+    width: 272px;
+    background-color: #ffffff3d;
+    padding: 2px;
+    border-radius: 12px;
+}
+
+#fluent-boards-app .el-button.fbs_kanban_view_stage_add_button {
+    background-color: #ffffff3d;
+}
+
+#fluent-boards-app .el-button.fbs_kanban_view_stage_add_button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#fluent-boards-app .el-button.fbs_kanban_view_stage_add_button span {
+    gap: 6px;
+    /* color: #172b4d; */
+    color: #fff;
+}
+
+#fluent-boards-app .el-button.fbs_kanban_view_stage_add_button span svg {
+    width: 20px;
+    height: 20px;
+}
+
+#fluent-boards-app .el-button.fbs_kanban_view_stage_add_button span svg path {
+    /* stroke: #172b4d; */
+    stroke: #fff;
+}
+
+/* Imp #2 : Replace settings icon with three dots on lists header  */
+#fluent-boards-app .fbs_show_board_show_section_actions {
+    padding: 8px;
+    border-radius: 8px;
+}
+
+#fluent-boards-app .fbs_show_board_show_section_actions:hover {
+    background-color: rgb(0,0,0,0.1);
+}
+
+#fluent-boards-app .fbs_show_board_show_section_actions .el-icon {
+    visibility: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#fluent-boards-app .fbs_show_board_show_section_actions .el-icon::after {
+    content: '...'; 
+    visibility: visible;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    line-height: 1;
+    margin-top: -8px;
+}
+
+/* Imp #3 : Remove plus icon from list header  */
+#fluent-boards-app .fbs_board_section__menu_trigger .fbs-show-task-add-button-on-top {
+    display: none;
+}
