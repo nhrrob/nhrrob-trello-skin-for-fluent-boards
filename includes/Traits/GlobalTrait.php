@@ -2,16 +2,14 @@
 
 namespace Nhrtsf\TrelloSkin\Traits;
 
-trait GlobalTrait
-{
-    public function dd($var)
-    {
-        echo "<pre>";
-        print_r($var);
-        wp_die('ok');
-    }
+trait GlobalTrait {
+    // public function dd($var) {
+    //     echo "<pre>";
+    //     print_r($var);
+    //     wp_die('ok');
+    // }
 
-    public function allowed_html(){
+    public function allowed_html() {
         $allowed_tags = wp_kses_allowed_html('post');
 
         $allowed_tags_extra = array(
