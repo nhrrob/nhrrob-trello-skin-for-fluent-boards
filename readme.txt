@@ -4,7 +4,7 @@ Tags: trello skin, for fluent boards, trello like board, task management board
 Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,6 +47,9 @@ The plugin's lightweight code ensures that it operates efficiently without slowi
 
 
 == Changelog ==
+
+= 1.0.4 - 19/10/2024 =
+- Added: Multiple improvements on the list and list item design
 
 = 1.0.3 - 19/10/2024 =
 - Fixed: Plugin banners naming issue fixed
