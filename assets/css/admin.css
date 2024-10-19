@@ -1,3 +1,17 @@
+/*
+
+==== Improvements ====
+1. Add new lists button
+2. Replace settings icon with three dots on lists header
+3. Remove plus icon from list header
+4. List header height
+5. list item height width border
+6. List header count border radius
+7. List item settings icon show on hover
+8. List header settings popup design 
+
+*/
+
 /* Imp #1 : Add new lists button  */
 #fluent-boards-app .fluentboards_databox.is-blur {
     background: rgb(0, 121, 191) !important;
@@ -71,3 +85,62 @@
 #fluent-boards-app .fbs_board_section__menu_trigger .fbs-show-task-add-button-on-top {
     display: none;
 }
+
+/* Imp #4 : List header height  */
+#fluent-boards-app .fbs_kanban_view_header {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 8px;
+}
+
+#fluent-boards-app .fbs_board_section_task_lists_wrap {
+    border-radius: 0 0 12px 12px;
+}
+
+#fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .fbs_board_section__header {
+    padding: 0px 8px 0px 12px;
+}
+
+/* Imp #5 : list item height width border */
+#fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .fbs_board_section__task_lists .fbs_board_section__task_list {
+    margin: 0 8px;
+    border: 2px solid transparent;
+}
+
+#fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .fbs_board_section__task_lists .fbs_board_section__task_list:hover {
+    border: 2px solid #388bff;
+}
+
+#fluent-boards-app .fbs_board_section__task_list {
+    box-shadow: 0px 1px 1px #091e4240;
+}
+
+#fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .fbs_board_section__task_lists .fbs_board_section__task_list .fbs_board_task__details_meta {
+    padding: 6px 10px 10px;
+}
+
+#fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .task_footer_wrap .fbs_card_footer {
+    padding: 0 10px;
+}
+
+#fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .fbs_board_section__task_lists .fbs_board_section__task_list {
+    padding: 0 0 10px;
+}
+
+/* Imp #6 : List header count border radius  */
+#fluent-boards-app .fbs_stage_items_counter {
+    height: 23px;
+    max-width: 15px;
+    border-radius: 50%;
+}
+
+/* Imp #7 : List item settings icon show on hover  */
+#fluent-boards-app .fbs_task_context {
+    display: none;
+}
+
+#fluent-boards-app .fbs_board_section__task_list:hover .fbs_task_context {
+    display: block;
+}
+
+/* Imp #8 : List header settings popup design  */
