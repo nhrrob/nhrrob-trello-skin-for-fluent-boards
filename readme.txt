@@ -4,7 +4,7 @@ Tags: skin, kanban, trello board, task management, fluent boards
 Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,6 +61,20 @@ The plugin's lightweight code ensures that it operates efficiently without slowi
 3. Gif to demonstrate existing improvements
 
 == Changelog ==
+
+= 1.0.5 - 20/10/2024 =
+- Added: new lists button
+- Added: List header height
+- Added: list item height width border
+- Added: List header count border radius
+- Added: List item settings icon show on hover
+- Added: List footer design
+- Added: List footer quick task creation popup design
+- Updated: List footer text change to 'Add a card'
+- Updated: Replace settings icon with three dots on lists header
+- Updated: Remove plus icon from list header
+- Updated: List item bottom spacing
+- Few more improvements
 
 = 1.0.4 - 19/10/2024 =
 - Added: Multiple improvements on the list and list item design
