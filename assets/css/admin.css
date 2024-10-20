@@ -8,8 +8,11 @@
 5. list item height width border
 6. List header count border radius
 7. List item settings icon show on hover
-8. List header settings popup design 
-
+8. List item bottom spacing
+9. List footer design
+10. List footer text change to 'Add a card'
+11. List footer quick task creation popup design
+12. List header settings popup design 
 */
 
 /* Imp #1 : Add new lists button  */
@@ -143,4 +146,78 @@
     display: block;
 }
 
-/* Imp #8 : List header settings popup design  */
+/* Imp #8 : List item bottom spacing  */
+#fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .fbs_board_section__task_lists {
+    padding-bottom: 8px;
+}
+
+/* Imp #9 : List footer design  */
+#fluent-boards-app .fbs_board_section_task_lists_wrap {
+    background: #e9edf6;
+}
+
+#fluent-boards-app .fbs_add_task_line {
+    padding: 8px;
+}
+
+#fluent-boards-app .fbs-add-task-div {
+    padding: 6px;
+    border-radius: 8px;
+    transition-property: background-color, border-color, box-shadow;
+    transition-duration: 85ms;
+    transition-timing-function: ease;
+}
+
+#fluent-boards-app .fbs-add-task-div:hover {
+    background: #091e4224;
+    color: #172b4d;
+}
+
+#fluent-boards-app .fbs_add_task_line:hover {
+    color: #172b4d;
+}
+
+#fluent-boards-app .fbs-add-task-div svg {
+    width: 22px;
+    height: 22px;
+    color: #172b4d;
+}
+
+#fluent-boards-app .fbs-add-task-div svg path {
+    stroke: #172b4d;
+}
+
+
+/* Imp #10 : List footer text change to 'Add a card'  */
+/* code level change  */
+
+/* Imp #11 : List footer quick task creation popup design  */
+#fluent-boards-app .fbs_inline_add_wrap {
+    padding-top: 0;
+}
+
+#fluent-boards-app .fbs_inline_add .task_inputs .el-textarea__inner {
+    min-height: 36px;
+    max-height: 160px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    /* height: 56px !important; */
+}
+
+#fluent-boards-app .fbs_inline_add {
+    border-radius: 8px;
+}
+
+#fluent-boards-app .fbs_inline_add_wrap .fbs_inline_actions .el-button {
+    border-radius: 3px;
+}
+
+#fluent-boards-app .fbs_inline_add_wrap .fbs_inline_actions .el-button:nth-child(2) {
+    background: transparent;
+    padding: 6px;
+}
+
+#fluent-boards-app .fbs_inline_add_wrap .fbs_inline_actions .el-button:nth-child(2):hover {
+    background: #091e4224;
+}
+/* Imp #12 : List header settings popup design  */

@@ -1,6 +1,6 @@
 === NHR Trello Skin for FluentBoards ===
 Contributors: nhrrob
-Tags: trello skin, for fluent boards, trello like board, task management board
+Tags: skin, kanban, trello board, task management, fluent boards
 Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 7.4
@@ -21,6 +21,20 @@ We understand the importance of a fast-loading website. That's why our plugin is
 
 ### 💬 Join Thousands of Happy Users
 Join the growing community of WordPress users who trust NHR Trello Skin for FluentBoards to streamline their dashboard experience. Install it today and enjoy the trello feel on FluentBoards like never before!
+
+### Improvements
+1. Add new lists button
+2. Replace settings icon with three dots on lists header
+3. Remove plus icon from list header
+4. List header height
+5. list item height width border
+6. List header count border radius
+7. List item settings icon show on hover
+8. List item bottom spacing
+9. List footer design
+10. List footer text change to 'Add a card'
+11. List footer quick task creation popup design
+12. List header settings popup design 
 
 == Installation ==
 
@@ -44,7 +58,7 @@ The plugin's lightweight code ensures that it operates efficiently without slowi
 
 1. Before installing the plugin.
 2. After installing the plugin. All notices are removed.
-
+3. Gif to demonstrate existing improvements
 
 == Changelog ==
 
