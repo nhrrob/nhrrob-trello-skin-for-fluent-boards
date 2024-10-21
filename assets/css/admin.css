@@ -12,7 +12,24 @@
 9. List footer design
 10. List footer text change to 'Add a card'
 11. List footer quick task creation popup design
-12. List header settings popup design 
+12. List width same as Trello list
+13. List item avatar on the right size
+14. List item inner spacing
+15. List item avatar hide
+16. List item date hide
+17. Comment position from 2nd to first column after hiding set dates
+18. Comment icon and count gap increase
+19. Label space reduce
+20. List header settings popup design 
+
+
+#ToDo
+1. Settings page to hide/show List Item -> Set Dates
+2. Settings page to hide/show List Item -> Avatar
+3. Settings page to hide/show List header -> count
+4. Settings page to update label : Add Stage to Add new list
+5. Settings page to update label : Add Task to Add a card
+
 */
 
 /* Imp #1 : Add new lists button  */
@@ -119,7 +136,7 @@
 }
 
 #fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .fbs_board_section__task_lists .fbs_board_section__task_list .fbs_board_task__details_meta {
-    padding: 6px 10px 10px;
+    padding: 8px 10px 4px;
 }
 
 #fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .task_footer_wrap .fbs_card_footer {
@@ -127,7 +144,7 @@
 }
 
 #fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .fbs_board_section__task_lists .fbs_board_section__task_list {
-    padding: 0 0 10px;
+    padding: 0 0 6px;
 }
 
 /* Imp #6 : List header count border radius  */
@@ -163,9 +180,9 @@
 #fluent-boards-app .fbs-add-task-div {
     padding: 6px;
     border-radius: 8px;
-    transition-property: background-color, border-color, box-shadow;
-    transition-duration: 85ms;
-    transition-timing-function: ease;
+    /* transition-property: background-color, border-color, box-shadow; */
+    /* transition-duration: 85ms; */
+    /* transition-timing-function: ease; */
 }
 
 #fluent-boards-app .fbs-add-task-div:hover {
@@ -220,4 +237,43 @@
 #fluent-boards-app .fbs_inline_add_wrap .fbs_inline_actions .el-button:nth-child(2):hover {
     background: #091e4224;
 }
-/* Imp #12 : List header settings popup design  */
+
+/* Imp #12 : List width same as Trello list  */
+#fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board {
+    width: 272px;
+}
+
+/* Imp #13 : List item avatar on the right size  */
+#fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .task_footer_wrap .fbs_card_footer {
+    flex-direction: row-reverse;
+}
+
+/* Imp 14. List item inner spacing */
+/* Done using above css  */
+
+/* Imp 15. List item avatar hide  */
+#fluent-boards-app .fbs_task_assignees li.fbs_no_pip {
+    display: none;
+}
+
+/* Imp 16. List item date hide  */
+#fluent-boards-app .fbs_board_section_task_due_date_and_icon {
+    display: none;
+}
+
+/* Imp 17. Comment position from 2nd to first column after hiding set dates  */
+#fluent-boards-app .fbs_card_footer > div:nth-child(3) {
+    display: none;
+}
+
+/* Imp 18. Comment icon and count gap increase  */
+#fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .task_footer_wrap .fbs_card_footer .fbs_sub_tasks_count {
+    gap: 4px;
+}
+
+/* Imp 19. Label space reduce  */
+.fbs_board_section__task_list_labels .label {
+    margin-right: 2px;
+}
+
+/* Imp 20. List header settings popup design  */
