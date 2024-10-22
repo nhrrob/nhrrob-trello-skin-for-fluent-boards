@@ -4,7 +4,7 @@ Tags: skin, kanban, trello board, task management, fluent boards
 Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,6 +61,18 @@ The plugin's lightweight code ensures that it operates efficiently without slowi
 3. Gif to demonstrate existing improvements
 
 == Changelog ==
+
+= 1.0.6 - 22/10/2024 =
+- Added: List item avatar on the right size
+- Added: List item inner spacing
+- Added: List item avatar hide
+- Added: Re order dates, comment, avatar
+- Added: List item comment count icon
+- Added: List item label content spaciing
+- Updated: List width same as Trello list
+- Updated: Comment icon and count gap increase
+- Updated: Label space reduce
+- Few more improvements
 
 = 1.0.5 - 20/10/2024 =
 - Added: new lists button
