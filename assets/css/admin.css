@@ -16,19 +16,23 @@
 13. List item avatar on the right size
 14. List item inner spacing
 15. List item avatar hide
-16. List item date hide
-17. Comment position from 2nd to first column after hiding set dates
+- 16. List item date hide
+17. Comment position from 2nd to first column | Re order dates, comment, avatar
 18. Comment icon and count gap increase
 19. Label space reduce
-20. List header settings popup design 
+20. List item comment count icon
+21. List item label content spaciing
+22. List header settings popup design 
 
 
 #ToDo
-1. Settings page to hide/show List Item -> Set Dates
-2. Settings page to hide/show List Item -> Avatar
-3. Settings page to hide/show List header -> count
-4. Settings page to update label : Add Stage to Add new list
-5. Settings page to update label : Add Task to Add a card
+1. Scrollbar design on list item
+2. Set Dates hide when no date selected - jQuery
+- 3. Settings page to hide/show List Item -> Set Dates
+4. Settings page to hide/show List Item -> Avatar
+5. Settings page to hide/show List header -> count
+6. Settings page to update label : Add Stage to Add new list
+7. Settings page to update label : Add Task to Add a card
 
 */
 
@@ -256,19 +260,20 @@
     display: none;
 }
 
-/* Imp 16. List item date hide  */
+/* - Imp 16. List item date hide  */
 #fluent-boards-app .fbs_board_section_task_due_date_and_icon {
-    display: none;
+    /* display: none; */
 }
 
-/* Imp 17. Comment position from 2nd to first column after hiding set dates  */
+/* - Imp 17. Comment position from 2nd to first column | Re order dates, comment, avatar  */
 #fluent-boards-app .fbs_card_footer > div:nth-child(3) {
-    display: none;
+    /* display: none; */
 }
 
 /* Imp 18. Comment icon and count gap increase  */
 #fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .task_footer_wrap .fbs_card_footer .fbs_sub_tasks_count {
     gap: 4px;
+    margin-left: -35%;
 }
 
 /* Imp 19. Label space reduce  */
@@ -276,4 +281,35 @@
     margin-right: 2px;
 }
 
-/* Imp 20. List header settings popup design  */
+/* Imp 20. List item comment count icon  */
+#fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .task_footer_wrap .fbs_card_footer .fbs_sub_tasks_count i{
+    background-image: url('../images/comment.svg');
+    background-position: center;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+}
+
+#fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .task_footer_wrap .fbs_card_footer .fbs_sub_tasks_count i svg {
+    display: none;
+}
+
+/* Imp 21. List item label content spaciing */
+#fluent-boards-app .fbs_board_section__task_list_labels {
+    /* margin-bottom: 0; */
+}
+
+#fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .fbs_board_section__task_lists .fbs_board_section__task_list .fbs_board_task__details_meta h3 {
+    line-height: 19px;
+}
+
+#fluent-boards-app .fbs_board_section__task_list_labels {
+    gap: 4px;
+}
+
+#fluent-boards-app .fbs_board_section__task_list_labels .label {
+    /* margin-bottom: 4px; */
+}
+
+/* Imp 22. List header settings popup design  */
