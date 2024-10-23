@@ -15,7 +15,7 @@
 12. List width same as Trello list
 13. List item avatar on the right size
 14. List item inner spacing
-15. List item avatar hide
+- 15. List item avatar hide
 - 16. List item date hide
 17. Comment position from 2nd to first column | Re order dates, comment, avatar
 18. Comment icon and count gap increase
@@ -23,16 +23,18 @@
 20. List item comment count icon
 21. List item label content spaciing - V1.0.6
 22. List header settings popup design 
-
+23. TBA
 
 #ToDo
 1. Scrollbar design on list item
-2. Set Dates hide when no date selected - jQuery
-- 3. Settings page to hide/show List Item -> Set Dates
-4. Settings page to hide/show List Item -> Avatar
-5. Settings page to hide/show List header -> count
-6. Settings page to update label : Add Stage to Add new list
-7. Settings page to update label : Add Task to Add a card
+- 2. Set Dates hide when no date selected - jQuery
+- 3. Hide assignee avatar when none selected - jQuery
+- 4. Settings page to hide/show List Item -> Set Dates
+5. Settings page to hide/show List Item -> Avatar
+6. Settings page to hide/show List header -> count
+7. Settings page to update label : Add Stage to Add new list
+8. Settings page to update label : Add Task to Add a card
+9. list action dots effect when right clicked and menu opened - similar to hover effect
 
 */
 
@@ -77,12 +79,15 @@
 }
 
 /* Imp #2 : Replace settings icon with three dots on lists header  */
-#fluent-boards-app .fbs_show_board_show_section_actions {
+/* Hover effect  */
+#fluent-boards-app .fbs_show_board_show_section_actions,
+.toplevel_page_fluent-boards .fbs_stage_action_header .el-icon {
     padding: 8px;
     border-radius: 8px;
 }
 
-#fluent-boards-app .fbs_show_board_show_section_actions:hover {
+#fluent-boards-app .fbs_show_board_show_section_actions:hover,
+.toplevel_page_fluent-boards .fbs_stage_action_header .el-icon:hover {
     background-color: rgb(0,0,0,0.1);
 }
 
@@ -255,9 +260,9 @@
 /* Imp 14. List item inner spacing */
 /* Done using above css  */
 
-/* Imp 15. List item avatar hide  */
+/* - Imp 15. List item avatar hide  */
 #fluent-boards-app .fbs_task_assignees li.fbs_no_pip {
-    display: none;
+    /* display: none; */
 }
 
 /* - Imp 16. List item date hide  */
@@ -273,7 +278,7 @@
 /* Imp 18. Comment icon and count gap increase  */
 #fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .task_footer_wrap .fbs_card_footer .fbs_sub_tasks_count {
     gap: 4px;
-    margin-left: -35%;
+    /* margin-left: -35%; */
 }
 
 /* Imp 19. Label space reduce  */
@@ -313,3 +318,51 @@
 }
 
 /* Imp 22. List header settings popup design  */
+/* List header container width & positioning | Side effect: when right is 0 it is not having FluentBoard or Trello behavior */
+.toplevel_page_fluent-boards .fbs-stage-actions-popover {
+    width: 304px !important;
+    border-radius: 8px !important;
+    margin-left: 137px; /* side effect on right 0 positioning */
+    margin-top: -4px;
+    box-shadow: var(--ds-shadow-overlay, 0px 8px 12px #091e4226, 0px 0px 1px #091e424f);
+    border: unset;
+    padding: 0;
+}
+
+/* List popup top arrow indicator hidden */
+.toplevel_page_fluent-boards .fbs-stage-actions-popover > .el-popper__arrow {
+    display: none;
+}
+
+/* Close icon font size  */
+.toplevel_page_fluent-boards .fbs_stage_action_header .el-icon {
+    font-size: 16px;
+}
+
+/* Hover effect on close icon  */
+/* Added in Imp#2 */
+
+/* List item action popup links design  */
+.toplevel_page_fluent-boards .fbs-stage-actions-popover .fbs_stage_action:not(.is-disabled) {
+    padding: 6px 12px;
+    border-radius: 0;
+    color: #172b4d;
+    transition: none;
+}
+
+.toplevel_page_fluent-boards .fbs-stage-actions-popover .fbs_stage_action:hover {
+    background: #091e420f !important;
+}
+
+.toplevel_page_fluent-boards .fbs-stage-actions-popover .fbs_stage_action > span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+/* Hide menu items icons */
+.toplevel_page_fluent-boards .fbs-stage-actions-popover .fbs_stage_action > span i {
+    display: none;
+}
+
+/* Imp 23. TBA */
