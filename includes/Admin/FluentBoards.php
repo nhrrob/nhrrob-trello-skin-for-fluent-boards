@@ -30,6 +30,7 @@ class FluentBoards extends App {
         $data['trans']['Archive all tasks'] = esc_html__('Archive all cards in this list', 'nhrrob-trello-skin-for-fluent-boards');
         $data['trans']['Reorder Stages'] = esc_html__('Reorder lists', 'nhrrob-trello-skin-for-fluent-boards');
         $data['trans']['Change Background'] = esc_html__('Change background', 'nhrrob-trello-skin-for-fluent-boards');
+        $data['trans']['Stage Name'] = esc_html__('Enter list name...', 'nhrrob-trello-skin-for-fluent-boards');
         return $data;
     }
 
