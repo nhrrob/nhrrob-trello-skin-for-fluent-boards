@@ -45,6 +45,7 @@
 1. List item action - popup positioning when right is 0 - not same as core FB
 2. List item Scrollbar design
 3. List item action - on click background flash
+4. List item modal - comment box font weight
 
 */
 
@@ -271,7 +272,7 @@
 /* Done using above css  */
 
 /* - 15. List item avatar hide  */
-#fluent-boards-app .fbs_task_assignees li.fbs_no_pip {
+#fluent-boards-app .task_footer_wrap .fbs_task_assignees li.fbs_no_pip {
     /* display: none; */
 }
 
@@ -535,7 +536,7 @@
 </div>
 </div> */
 
-.toplevel_page_fluent-boards .el-textarea .el-textarea__inner {
+.toplevel_page_fluent-boards .fbs-task_edit_wrapper .el-textarea .el-textarea__inner {
     font-size: 20px;
     font-weight: 600;
 }
@@ -547,12 +548,19 @@
 
 /* content block spacing */
 .toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-task-description,
-.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-subtask-comments-wrap .pro-feature,
 .toplevel_page_fluent-boards .fbs-task-comment-and-activities-box .el-tabs .el-tabs__content #pane-comment,
 .toplevel_page_fluent-boards .fbs-task-comment-and-activities-box .el-tabs .el-tabs__content #pane-activity, 
 .toplevel_page_fluent-boards .fbs-task-comment-and-activities-box .el-tabs .el-tabs__content #pane-allTaskCommentAndActivity {
     padding: 0;
     margin-bottom: 24px;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-subtask-comments-wrap .pro-feature,
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-subtask-wrap .pro-feature {
+    padding: 6px 0;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-task-description .fbs-task-description-content-wrap {
@@ -606,4 +614,21 @@
 
 .toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-task-property-box-wrap .fbs-task-label-wrap .fbs-set-label:hover {
     background: #091e4224;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-task-description {
+    border-bottom: none;
+}
+
+/* Members design  */
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_task_assignees li:not(.fbs_no_pip) {
+    border: none;
+}
+
+.toplevel_page_fluent-boards .fbs-task-property-boxes .fbs-task-assignees-box .ft_assignee .fbs_assignees .fbs_task_assignees {
+    gap: 4px;
+}
+
+.toplevel_page_fluent-boards .fbs-task-property-boxes .fbs-task-assignees-box .ft_assignee .fbs_assignees .fbs_task_assignees li {
+    margin: 0;
 }
