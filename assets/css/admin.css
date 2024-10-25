@@ -583,6 +583,7 @@
 /* label and members spacing  */
 .toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-task-property-box-wrap .fbs-task-property-boxes {
     justify-content: flex-start;
+    margin-bottom: 8px;
 }
 
 /* label design  */
@@ -631,4 +632,25 @@
 
 .toplevel_page_fluent-boards .fbs-task-property-boxes .fbs-task-assignees-box .ft_assignee .fbs_assignees .fbs_task_assignees li {
     margin: 0;
+}
+
+/* Priority level design  */
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-priority-label,
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_due_date_change .set-date {
+    background: #091e420f;
+    color: #172b4d;
+    border-radius: 3px;
+    font-weight: 500;
+    padding: 6px 12px !important;
+    line-height: 20px;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-priority-label:hover,
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_due_date_change .set-date:hover {
+    background: #091e4224;
+}
+
+/* due date design  */
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_due_date_change label {
+    height: unset;
 }
