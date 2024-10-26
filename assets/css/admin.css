@@ -28,6 +28,8 @@
 - 25. (Later) List item action - popup design
 26. Item Modal | design
 27. Item Modal - close on outside click
+28. Item Modal - comments all tab hide
+29. Item Modal - comment box design
 
 #ToDo
 1. Scrollbar design on list item
@@ -45,6 +47,7 @@
 1. List item action - popup positioning when right is 0 - not same as core FB
 2. List item Scrollbar design
 3. List item action - on click background flash
+4. Item modal - Comment box - show details (activity) responsiveness - after making position absolute
 */
 
 /* 1. Add new lists button  */
@@ -665,4 +668,93 @@
 .toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_activities .fbs_activity_content,
 .toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_view_comment_list_inner .fbs_comment .fbs_comment_inner {
     padding: 0;
+}
+
+/* 27. Item Modal - close on outside click */
+/* 28. Item Modal - comments all tab hide */
+/* Added in js */
+
+/* 29. Item Modal - comment box/para design */
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_view_comment_list_inner .fbs_comment .fbs-comment_bottom {
+    background: #fff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    box-shadow: var(--ds-shadow-raised, 0px 1px 1px #091e4240, 0px 0px 1px #091e424f);
+    margin-right: 2px;
+    text-overflow: ellipsis;
+    line-height: 1.7;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_view_comment_list_inner .fbs_comment .fbs_comment_top {
+    margin-bottom: 8px;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_view_comment_list_inner .fbs_comment .fbs-comment-action {
+    bottom: -24px;
+    left: 2px;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_view_comment_list_inner .fbs_comment .fbs-comment-action .icon-btn:hover {
+    text-decoration: underline;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-comment-and-activities-box .el-tabs .el-tabs__header .el-tabs__nav {
+    margin-bottom: 12px;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-comment-and-activities-box .el-tabs .el-tabs__header .el-tabs__nav #tab-comment {
+    color: #1b2533;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: space-between;
+    margin-left: 28px;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-comment-and-activities-box .el-tabs .el-tabs__header .el-tabs__nav #tab-activity {
+    color: #172b4d;
+    position: absolute;
+    right: 0;
+    background: #091e420f;
+    font-weight: 500;
+    font-size: 14px;
+    transition-property: background-color, border-color, box-shadow;
+    transition-duration: 85ms;
+    transition-timing-function: ease;
+    padding: 6px 12px;
+    border-radius: 3px;
+    height: 32px;
+    margin-top: 4px;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-comment-and-activities-box .el-tabs .el-tabs__header .el-tabs__nav #tab-activity:hover {
+    color: #172b4d;
+    background: #091e4224;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-task-description h1 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-comment-and-activities-box .el-tabs .el-tabs__header .el-tabs__nav-wrap:after,
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-comment-and-activities-box .el-tabs .el-tabs__header .el-tabs__nav .el-tabs__active-bar {
+    background: transparent;
+}
+
+/* Comment box 2nd title and sort by select hide  */
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-comments-list .fbs-comment-count,
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_comment_title {
+    display: none !important;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-comment-and-activities-box .el-tabs .el-tabs__header {
+    margin-bottom: 0;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-comment-and-activities-box .el-tabs .el-tabs__content #pane-comment .fbs-task-comments-list {
+    margin-top: 12px;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-activities-wrap .fbs_activity-history {
+    margin-top: 0;
 }

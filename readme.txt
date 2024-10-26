@@ -4,7 +4,7 @@ Tags: skin, kanban, trello board, task management, fluent boards
 Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,6 +61,11 @@ The plugin's lightweight code ensures that it operates efficiently without slowi
 3. Gif to demonstrate existing improvements
 
 == Changelog ==
+
+= 1.0.9 - 28/10/2024 =
+- Added: Item Modal - comments all tab hide
+- Added: Item Modal - comment box/panel design
+- Few more improvements
 
 = 1.0.8 - 26/10/2024 =
 - Added: List header settings - popup design
