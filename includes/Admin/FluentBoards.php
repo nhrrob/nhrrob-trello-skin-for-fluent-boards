@@ -38,6 +38,9 @@ class FluentBoards extends App {
         $data['trans']['Custom Field'] = esc_html__('Custom Fields', 'nhrrob-trello-skin-for-fluent-boards');
         $data['trans']['Change Cover'] = esc_html__('Cover', 'nhrrob-trello-skin-for-fluent-boards');
         $data['trans']['Leave Task'] = esc_html__('Leave', 'nhrrob-trello-skin-for-fluent-boards');
+        $data['trans']['Write a comment'] = esc_html__('Write a comment...', 'nhrrob-trello-skin-for-fluent-boards');
+        $data['trans']['Comments'] = esc_html__('Activity', 'nhrrob-trello-skin-for-fluent-boards');
+        $data['trans']['Activities'] = esc_html__('Show details', 'nhrrob-trello-skin-for-fluent-boards');
         return $data;
     }
 
