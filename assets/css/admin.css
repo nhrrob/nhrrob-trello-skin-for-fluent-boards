@@ -45,8 +45,6 @@
 1. List item action - popup positioning when right is 0 - not same as core FB
 2. List item Scrollbar design
 3. List item action - on click background flash
-4. List item modal - comment box font weight
-
 */
 
 /* 1. Add new lists button  */
@@ -653,4 +651,18 @@
 /* due date design  */
 .toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_due_date_change label {
     height: unset;
+}
+
+/* comment box avatar size  */
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-comment-editor-toggle-container img,
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_activities .fbs-activity_user_profile .fbs_activity_user_profile_img img,
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_view_comment_list_inner img {
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_activities .fbs_activity_content,
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_view_comment_list_inner .fbs_comment .fbs_comment_inner {
+    padding: 0;
 }
