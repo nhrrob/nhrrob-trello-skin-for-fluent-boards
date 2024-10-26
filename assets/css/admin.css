@@ -22,8 +22,11 @@
 19. Label space reduce
 20. List item comment count icon
 21. List item label content spaciing - V1.0.6
-22. List header settings popup design 
-23. TBA
+22. List header settings - popup design 
+23. Add another list - form design
+- 24. (Later) List item action - icon change and hover effect
+- 25. (Later) List item action - popup design
+26. Item Modal | design
 
 #ToDo
 1. Scrollbar design on list item
@@ -35,10 +38,16 @@
 7. Settings page to update label : Add Stage to Add new list
 8. Settings page to update label : Add Task to Add a card
 9. list action dots effect when right clicked and menu opened - similar to hover effect
+10. Item modal - close on click outside
+11. Action to Actions and show it as title on item modal
 
+#Issues
+1. List item action - popup positioning when right is 0 - not same as core FB
+2. List item Scrollbar design
+3. List item action - on click background flash
 */
 
-/* Imp #1 : Add new lists button  */
+/* 1. Add new lists button  */
 #fluent-boards-app .fluentboards_databox.is-blur {
     background: rgb(0, 121, 191) !important;
 }
@@ -78,7 +87,7 @@
     stroke: #fff;
 }
 
-/* Imp #2 : Replace settings icon with three dots on lists header  */
+/* 2. Replace settings icon with three dots on lists header  */
 /* Hover effect  */
 #fluent-boards-app .fbs_show_board_show_section_actions,
 .toplevel_page_fluent-boards .fbs_stage_action_header .el-icon {
@@ -110,12 +119,12 @@
     margin-top: -8px;
 }
 
-/* Imp #3 : Remove plus icon from list header  */
+/* 3. Remove plus icon from list header  */
 #fluent-boards-app .fbs_board_section__menu_trigger .fbs-show-task-add-button-on-top {
     display: none;
 }
 
-/* Imp #4 : List header height  */
+/* 4. List header height  */
 #fluent-boards-app .fbs_kanban_view_header {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -130,7 +139,7 @@
     padding: 0px 8px 0px 12px;
 }
 
-/* Imp #5 : list item height width border */
+/* 5. list item height width border */
 #fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .fbs_board_section__task_lists .fbs_board_section__task_list {
     margin: 0 8px;
     border: 2px solid transparent;
@@ -156,14 +165,14 @@
     padding: 0 0 6px;
 }
 
-/* Imp #6 : List header count border radius  */
+/* 6. List header count border radius  */
 #fluent-boards-app .fbs_stage_items_counter {
     height: 23px;
     max-width: 15px;
     border-radius: 50%;
 }
 
-/* Imp #7 : List item settings icon show on hover  */
+/* 7. List item settings icon show on hover  */
 #fluent-boards-app .fbs_task_context {
     display: none;
 }
@@ -172,12 +181,12 @@
     display: block;
 }
 
-/* Imp #8 : List item bottom spacing  */
+/* 8. List item bottom spacing  */
 #fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .fbs_board_section__task_lists {
     padding-bottom: 8px;
 }
 
-/* Imp #9 : List footer design  */
+/* 9. List footer design  */
 #fluent-boards-app .fbs_board_section_task_lists_wrap {
     background: #e9edf6;
 }
@@ -214,10 +223,10 @@
 }
 
 
-/* Imp #10 : List footer text change to 'Add a card'  */
+/* 10. List footer text change to 'Add a card'  */
 /* code level change  */
 
-/* Imp #11 : List footer quick task creation popup design  */
+/* 11. List footer quick task creation popup design  */
 #fluent-boards-app .fbs_inline_add_wrap {
     padding-top: 0;
 }
@@ -247,46 +256,46 @@
     background: #091e4224;
 }
 
-/* Imp #12 : List width same as Trello list  */
+/* 12. List width same as Trello list  */
 #fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board {
     width: 272px;
 }
 
-/* Imp #13 : List item avatar on the right size  */
+/* 13. List item avatar on the right size  */
 #fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .task_footer_wrap .fbs_card_footer {
     flex-direction: row-reverse;
 }
 
-/* Imp 14. List item inner spacing */
+/* 14. List item inner spacing */
 /* Done using above css  */
 
-/* - Imp 15. List item avatar hide  */
-#fluent-boards-app .fbs_task_assignees li.fbs_no_pip {
+/* - 15. List item avatar hide  */
+#fluent-boards-app .task_footer_wrap .fbs_task_assignees li.fbs_no_pip {
     /* display: none; */
 }
 
-/* - Imp 16. List item date hide  */
+/* - 16. List item date hide  */
 #fluent-boards-app .fbs_board_section_task_due_date_and_icon {
     /* display: none; */
 }
 
-/* - Imp 17. Comment position from 2nd to first column | Re order dates, comment, avatar  */
+/* - 17. Comment position from 2nd to first column | Re order dates, comment, avatar  */
 #fluent-boards-app .fbs_card_footer > div:nth-child(3) {
     /* display: none; */
 }
 
-/* Imp 18. Comment icon and count gap increase  */
+/* 18. Comment icon and count gap increase  */
 #fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .task_footer_wrap .fbs_card_footer .fbs_sub_tasks_count {
     gap: 4px;
     /* margin-left: -35%; */
 }
 
-/* Imp 19. Label space reduce  */
+/* 19. Label space reduce  */
 .fbs_board_section__task_list_labels .label {
     margin-right: 2px;
 }
 
-/* Imp 20. List item comment count icon  */
+/* 20. List item comment count icon  */
 #fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .task_footer_wrap .fbs_card_footer .fbs_sub_tasks_count i{
     background-image: url('../images/comment.svg');
     background-position: center;
@@ -300,7 +309,7 @@
     display: none;
 }
 
-/* Imp 21. List item label content spaciing */
+/* 21. List item label content spaciing */
 #fluent-boards-app .fbs_board_section__task_list_labels {
     /* margin-bottom: 0; */
 }
@@ -317,7 +326,7 @@
     /* margin-bottom: 4px; */
 }
 
-/* Imp 22. List header settings popup design  */
+/* 22. List header settings - popup design  */
 /* List header container width & positioning | Side effect: when right is 0 it is not having FluentBoard or Trello behavior */
 .toplevel_page_fluent-boards .fbs-stage-actions-popover {
     width: 304px !important;
@@ -365,4 +374,295 @@
     display: none;
 }
 
-/* Imp 23. TBA */
+/* 23. Add another list - form design */
+#fluent-boards-app .fbs_creating_stage_heading {
+    display: none;
+}
+
+#fluent-boards-app .fbs_create_stage_title_type_input_button {
+    padding: 8px;
+}
+
+#fluent-boards-app .fbs_create_stage_title_type_input_button .el-row:nth-child(2) {
+    display: none; /* First row - list title; 2nd row - status open/closed. Hiding status row */
+}
+
+#fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .fbs_create_stage_title_type_input_button .el-row .el-input .el-input__wrapper {
+    padding: 0;
+    border: none;
+    /* font-size: 14px;
+    font-weight: 600;
+    line-height: 24px; */
+}
+
+#fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .fbs_create_stage_title_type_input_button .el-row .el-input .el-input__wrapper input {
+    color: #172b4d;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 4px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    padding: 6px 12px;
+    margin: 0;
+    min-height: 20px;
+    max-height: 256px;
+    height: 32px; /* if this input field is converted to textarea later, then we may hide this height css */
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--ds-border-input,#091e4224);
+    outline: none;
+    transition-duration: 85ms;
+    transition-property: background-color,border-color,box-shadow;
+    transition-timing-function: ease;
+    text-transform: none;
+}
+
+#fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .fbs_create_stage_title_type_input_button .el-row .el-input .el-input__wrapper input:hover {
+    background-color: var(--ds-background-input-hovered,#f7f8f9);
+    box-shadow: inset 0 0 0 1px var(--ds-border-input,#091e4224);
+}
+
+#fluent-boards-app .fbs_board_section_view .fbs_tasks_layout_grid .fbs_board_view__section_board .fbs_create_stage_title_type_input_button .el-row .el-input .el-input__wrapper input:focus {
+    background: #fff;
+    box-shadow: inset 0 0 0 2px #388bff;
+}
+
+/* (Later) 24. List item action - icon change and hover effect */
+.toplevel_page_fluent-boards .fbs-close-task-modal {
+    /* background: unset;
+    border: unset;
+    top: 8px;
+    right: 8px;
+    margin: 0; */
+}
+
+/* (Later) 25. List item action - popup design */
+
+/* 26. Item Modal | design */
+/* (later) close icon position */
+
+/* modal width  */
+.toplevel_page_fluent-boards .fbs_view_task_modal {
+    width: 768px;
+}
+
+/* modal background color */
+.toplevel_page_fluent-boards .fbs-task-details-header, 
+.toplevel_page_fluent-boards .fbs-task-body {
+    background-color: #091e420f;
+}
+
+/* spacing  */
+.toplevel_page_fluent-boards .fbs-task-details-header {
+    padding: 16px 16px 0 16px;
+    border-bottom: 1px solid transparent;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-header .fbs-task-details-header-bottom {
+    margin-bottom: 24px;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body {
+    display: grid;
+    grid-template-columns: [main] 568px [sidebar] minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    column-gap: 16px;
+    row-gap: 8px;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left {
+    grid-column-start: main;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    border-right: none;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-sidebar {
+    grid-column-start: sidebar;
+    padding-right: 16px;
+    padding-bottom: 24px;
+    width: unset;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-sidebar .fbs-task-sidebar-action {
+    padding: 0;
+    border-bottom: none;
+    margin-bottom: 24px;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-task-property-box-wrap {
+    padding: 0;
+    border-bottom: none;
+    margin-bottom: 16px;
+}
+
+/* sidebar design  */
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-sidebar .fbs-add-to-task-container, 
+.fbs-task-details-wrap .fbs-task-body .fbs-task-sidebar .fbs-task-sidebar-action-btns {
+    gap: 8px;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-sidebar .fbs-add-to-task-container button, 
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-sidebar .fbs-task-sidebar-action-btns button {
+    padding: 6px 12px;
+    line-height: 20px;
+    border-radius: 3px;
+    background-color: #091e420f;
+    transition-property: background-color, border-color, box-shadow;
+    transition-duration: 85ms;
+    transition-timing-function: ease;
+    gap: 8px;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-sidebar .fbs-add-to-task-container button > span, 
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-sidebar .fbs-task-sidebar-action-btns button > span {
+    gap: 8px;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-sidebar .sidebar-title {
+    display: none;
+}
+
+/* Title edit - design */
+
+/* Markup */
+/* <div class="fbs-task_edit_wrapper">
+<div class="fbs-edit_title">
+<div class="el-textarea">
+<textarea class="el-textarea__inner is-focus" tabindex="0" autocomplete="off" placeholder="Task Title" id="el-id-3702-195" style="min-height: 31px; height: 31px;"></textarea>
+</div>
+</div>
+</div> */
+
+.toplevel_page_fluent-boards .fbs-task_edit_wrapper .el-textarea .el-textarea__inner {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.toplevel_page_fluent-boards .el-textarea .el-textarea__inner:focus {
+    background-color: var(--ds-background-input, #ffffff);
+    box-shadow: inset 0 0 0 2px var(--ds-border-focused, #388bff);
+}
+
+/* content block spacing */
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-task-description,
+.toplevel_page_fluent-boards .fbs-task-comment-and-activities-box .el-tabs .el-tabs__content #pane-comment,
+.toplevel_page_fluent-boards .fbs-task-comment-and-activities-box .el-tabs .el-tabs__content #pane-activity, 
+.toplevel_page_fluent-boards .fbs-task-comment-and-activities-box .el-tabs .el-tabs__content #pane-allTaskCommentAndActivity {
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-subtask-comments-wrap .pro-feature,
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-subtask-wrap .pro-feature {
+    padding: 6px 0;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-task-description .fbs-task-description-content-wrap {
+    padding: 0;
+}
+
+/* description design  */
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-task-description .fbs-task-wp-editor,
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-task-description .fbs-task-no-description,
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-task-description .fbs-task-description-content-wrap,
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-task-property-box-wrap .fbs-task-label-wrap {
+    margin-left: 28px;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-task-property-box-wrap .fbs-task-property-boxes {
+    padding-left: 28px;
+    margin-bottom: 0;
+}
+
+/* label and members spacing  */
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-task-property-box-wrap .fbs-task-property-boxes {
+    justify-content: flex-start;
+    margin-bottom: 8px;
+}
+
+/* label design  */
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-task-property-box-wrap .fbs-task-label-wrap .fbs-task-labels {
+    gap: 4px;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-task-property-box-wrap .fbs-task-label-wrap .fbs-task-labels .fbs-task-label {
+    border-radius: 3px;
+    padding: 0 12px;
+    height: 32px;
+    min-width: 48px;
+    line-height: 32px;
+    /* max-width: 100%; */
+    /* text-overflow: ellipsis; */
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-task-property-box-wrap .fbs-task-label-wrap .fbs-set-label {
+    padding: 8px 9px;
+    margin-right: 8px;
+    height: unset;
+    width: unset;
+    line-height: 14px;
+    border-radius: 3px;
+    border: none;
+    background: #091e420f;
+    color: #172b4d;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-task-property-box-wrap .fbs-task-label-wrap .fbs-set-label:hover {
+    background: #091e4224;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-task-description {
+    border-bottom: none;
+}
+
+/* Members design  */
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_task_assignees li:not(.fbs_no_pip) {
+    border: none;
+}
+
+.toplevel_page_fluent-boards .fbs-task-property-boxes .fbs-task-assignees-box .ft_assignee .fbs_assignees .fbs_task_assignees {
+    gap: 4px;
+}
+
+.toplevel_page_fluent-boards .fbs-task-property-boxes .fbs-task-assignees-box .ft_assignee .fbs_assignees .fbs_task_assignees li {
+    margin: 0;
+}
+
+/* Priority level design  */
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-priority-label,
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_due_date_change .set-date {
+    background: #091e420f;
+    color: #172b4d;
+    border-radius: 3px;
+    font-weight: 500;
+    padding: 6px 12px !important;
+    line-height: 20px;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-priority-label:hover,
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_due_date_change .set-date:hover {
+    background: #091e4224;
+}
+
+/* due date design  */
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_due_date_change label {
+    height: unset;
+}
+
+/* comment box avatar size  */
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-comment-editor-toggle-container img,
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_activities .fbs-activity_user_profile .fbs_activity_user_profile_img img,
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_view_comment_list_inner img {
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_activities .fbs_activity_content,
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs_view_comment_list_inner .fbs_comment .fbs_comment_inner {
+    padding: 0;
+}

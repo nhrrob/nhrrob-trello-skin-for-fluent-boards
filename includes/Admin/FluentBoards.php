@@ -30,6 +30,14 @@ class FluentBoards extends App {
         $data['trans']['Archive all tasks'] = esc_html__('Archive all cards in this list', 'nhrrob-trello-skin-for-fluent-boards');
         $data['trans']['Reorder Stages'] = esc_html__('Reorder lists', 'nhrrob-trello-skin-for-fluent-boards');
         $data['trans']['Change Background'] = esc_html__('Change background', 'nhrrob-trello-skin-for-fluent-boards');
+        $data['trans']['Stage Name'] = esc_html__('Enter list name...', 'nhrrob-trello-skin-for-fluent-boards');
+        $data['trans']['Assignees'] = esc_html__('Members', 'nhrrob-trello-skin-for-fluent-boards');
+        $data['trans']['Due Date'] = esc_html__('Due date', 'nhrrob-trello-skin-for-fluent-boards');
+        $data['trans']['Archive Task'] = esc_html__('Archive', 'nhrrob-trello-skin-for-fluent-boards');
+        $data['trans']['Make Template'] = esc_html__('Make template', 'nhrrob-trello-skin-for-fluent-boards');
+        $data['trans']['Custom Field'] = esc_html__('Custom Fields', 'nhrrob-trello-skin-for-fluent-boards');
+        $data['trans']['Change Cover'] = esc_html__('Cover', 'nhrrob-trello-skin-for-fluent-boards');
+        $data['trans']['Leave Task'] = esc_html__('Leave', 'nhrrob-trello-skin-for-fluent-boards');
         return $data;
     }
 
