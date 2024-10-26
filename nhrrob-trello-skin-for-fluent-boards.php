@@ -5,7 +5,7 @@
  * Description: Trello like Skin for FluentBoards
  * Author: Nazmul Hasan Robin
  * Author URI: https://profiles.wordpress.org/nhrrob/
- * Version: 1.0.7
+ * Version: 1.0.8
  * Requires at least: 6.0
  * Requires PHP: 7.4
  * Text Domain: nhrrob-trello-skin-for-fluent-boards
@@ -29,7 +29,7 @@ final class Nhrtsf_Trello_Skin {
      *
      * @var string
      */
-    const nhrtsf_version = '1.0.7';
+    const nhrtsf_version = '1.0.8';
 
     /**
      * Class construcotr
