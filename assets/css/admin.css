@@ -518,6 +518,11 @@
     gap: 8px;
 }
 
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-sidebar .fbs-add-to-task-container button:hover, 
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-sidebar .fbs-task-sidebar-action-btns button:hover {
+    background: #091e4224;
+}
+
 .toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-sidebar .fbs-add-to-task-container button > span, 
 .toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-sidebar .fbs-task-sidebar-action-btns button > span {
     gap: 8px;
@@ -601,6 +606,10 @@
     line-height: 32px;
     /* max-width: 100%; */
     /* text-overflow: ellipsis; */
+}
+
+.toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-task-property-box-wrap .fbs-task-label-wrap .fbs-task-labels .fbs-task-label:hover {
+    opacity: 0.9;
 }
 
 .toplevel_page_fluent-boards .fbs-task-details-wrap .fbs-task-body .fbs-task-body-left .fbs-task-property-box-wrap .fbs-task-label-wrap .fbs-set-label {

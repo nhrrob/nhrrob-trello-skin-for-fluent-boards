@@ -19,6 +19,9 @@
                 || $(event.target).closest('i').length
                 || $(event.target).closest('.fbs_task_due_date_popover').length
                 || $(event.target).closest('.fbs_task_assignees_container').length
+                || $(event.target).closest('.el-message-box__btns button span').length
+                || $(event.target).closest('.fbs-task_edit_wrapper').length
+                || $(event.target).closest('.media-modal-content').length
             ) {
                 return; // Exit if the click is inside .fbs_board_section__task_lists or its child
             }
