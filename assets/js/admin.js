@@ -4,7 +4,22 @@
     $(document).ready(function() {
         /* 27. Item Modal - close on outside click */
         $(document).on('click', function(event) {
-            if ($(event.target).closest('.fbs_board_section__task_lists').length) {
+            if (
+                $(event.target).closest('.fbs_board_section__task_lists').length
+                || $(event.target).closest('.fbs-task-details-wrap').length
+                || $(event.target).closest('.fbs-task-no-description').length
+                || $(event.target).closest('.fbs-comment-action').length
+                || $(event.target).closest('.el-popper.el-dropdown__popper').length
+                || $(event.target).closest('.fbs-task-label-popover').length
+                || $(event.target).closest('.fbs-task-add-popover-box').length
+                || $(event.target).closest('.edit').length
+                || $(event.target).closest('.fbs-task-popover-footer-action').length
+                || $(event.target).closest('.fbs_task_mover_actions').length
+                || $(event.target).closest('button').length
+                || $(event.target).closest('i').length
+                || $(event.target).closest('.fbs_task_due_date_popover').length
+                || $(event.target).closest('.fbs_task_assignees_container').length
+            ) {
                 return; // Exit if the click is inside .fbs_board_section__task_lists or its child
             }
     
