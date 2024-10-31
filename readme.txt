@@ -122,7 +122,7 @@ The plugin's lightweight code ensures that it operates efficiently without slowi
 - Added: Composer json file
 
 = 1.0.0 - 18/10/2024 =
-- Initial beta release. Cheers!
+- Initial beta release. Cheers!!
 
 
 == Upgrade Notice ==
