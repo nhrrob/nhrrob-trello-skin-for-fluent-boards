@@ -2,9 +2,9 @@
 Contributors: nhrrob
 Tags: skin, kanban, trello board, task management, fluent boards
 Requires at least: 6.0
-Tested up to: 6.7
+Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,6 +61,10 @@ The plugin's lightweight code ensures that it operates efficiently without slowi
 3. Gif to demonstrate existing improvements
 
 == Changelog ==
+
+= 1.1.1 - 30/03/2025 =
+- WordPress tested up to version is updated to 6.8
+- Few more improvements
 
 = 1.1.0 - 30/10/2024 =
 - Added: Item Modal | Action button hover effect
